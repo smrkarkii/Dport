@@ -1,0 +1,811 @@
+/* * {
+  background-color: #000000;
+} */
+body {
+  background-color: black;
+}
+html {
+  scroll-behavior: smooth;
+}
+.intro {
+  background-color: #000000;
+}
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: black; */
+}
+p {
+  color: #999999;
+  margin: 0px;
+}
+
+.title-row {
+  align-items: center;
+}
+
+#title p {
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: rgb(70, 69, 69);
+  color: black;
+}
+.title-desc {
+  font-family: Ubuntu;
+  font-size: 0.9rem;
+  color: rgb(92 92 92);
+  color: black;
+}
+
+body {
+  font-family: "Montserrat";
+}
+h1,
+.head-1 {
+  font-family: "Montserrat";
+  font-weight: 900;
+  color: #198754;
+  line-height: 1.2em;
+  font-size: 60px;
+}
+
+h2 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  line-height: 1.2em;
+  color: #198754;
+}
+h3 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  line-height: 1.2em;
+  color: #198754;
+  /* padding-top: 5%; */
+}
+h4 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  line-height: 1.2em;
+  color: #198754;
+}
+h5 {
+  font-family: "Montserrat";
+  font-weight: 500;
+  line-height: 1rem;
+  line-height: 1.2rem;
+  color: #198754;
+}
+.head-10 {
+  font-size: 60px;
+}
+.fa {
+  color: rgb(68, 64, 64);
+}
+.col-md-6 {
+  padding: 0%;
+  margin: 0;
+}
+
+/* about me page */
+#about-me {
+  /* background-color: #002135; */
+  /* #darkmode changed */
+  color: white;
+  background-color: black;
+}
+#about-me .header-about {
+  width: 70%;
+  text-align: center;
+  margin-bottom: 50px;
+  margin: auto;
+  padding-top: 50px;
+}
+.about-box {
+  display: grid;
+}
+
+#educations,
+#experiences {
+  padding: 40px;
+}
+
+.container-fluid {
+  margin: 0px;
+  padding: 0px;
+}
+.date {
+  color: rgb(127, 127, 127);
+  font-style: italic;
+}
+
+/* cv */
+
+#cv-download a {
+  text-decoration: none;
+}
+.cv-div {
+  margin-top: 10px;
+}
+
+/*nav bar */
+.nav-link:hover {
+  transform: scale(1.2);
+}
+.gridItems:hover {
+  /* background-color: rgb(146, 0, 0); */
+  box-shadow: 0 0 5px 1px rgba(0, 255, 89, 0.46);
+}
+.navbar-brand {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.navbar {
+  padding: 15px 150px;
+  /* background-color: #002135; */
+  z-index: 1;
+  margin-bottom: 50px;
+  opacity: 95%;
+}
+
+.fixed-nav {
+  position: fixed;
+  margin-top: 0;
+  width: 100%;
+  padding: 15px 150px;
+  background-color: #002135;
+  z-index: 1;
+}
+
+.navbar-nav {
+  font-size: 1.2rem;
+}
+.head-name {
+  font-family: Montserrat;
+  font-weight: 900;
+  font-size: xx-large;
+}
+.navbar-brand {
+  color: #198754;
+}
+
+/* responsive */
+
+/* title section */
+.row {
+  padding: 1% 15%;
+  margin: 0px;
+  height: 609px;
+}
+
+.image-col img {
+  width: 300px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  height: auto;
+}
+/* about me */
+
+/*education */
+
+.edu-box-main,
+.ex-box-main {
+  margin-top: 25px;
+}
+.edu-box {
+  margin-bottom: 27px;
+}
+.ex-box {
+  margin-bottom: 27px;
+}
+
+.ex-box p,
+.edu-box p {
+  width: 350px;
+
+  /* margin: 3%; */
+}
+
+.edu-exp {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 450px, 450px;
+  column-gap: 3rem;
+  justify-content: center;
+}
+
+.gridContainer {
+  display: grid;
+  grid-row-gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 2%;
+  padding: 2% 3%;
+  row-gap: 4.5rem;
+  text-align: center;
+}
+
+.gridItems {
+  position: relative;
+  text-align: center;
+  justify-self: center;
+  box-shadow: 0 0 5px 1px rgba(0, 164, 57, 0.46);
+  /* background-color: #ffffff; */
+  /* changed dark mode */
+  padding: 5% 3%;
+}
+
+.project-desc {
+  font-family: Ubuntu;
+  font-size: 0.9rem;
+  color: rgb(92 92 92);
+  padding: 0 4% 2% 0;
+}
+
+#projects,
+#intro,
+#about-me,
+#achievements,
+#skills,
+#contact-me {
+  background-color: black;
+}
+#footers {
+  background-color: #196743;
+}
+#projects h2 {
+  font-family: "Montserrat";
+  font-weight: 900px;
+  color: #198754;
+  text-align: center;
+  font-size: 2rem;
+  /* margin-top: 45px; */
+}
+#projects h3 {
+  font-family: "Montserrat";
+  color: #198754;
+  text-align: center;
+}
+
+.languages-used {
+  color: grey;
+  /* padding-top: 5%; dark mode */
+}
+.team p {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #999999;
+}
+.header {
+  height: 40px;
+  margin: auto;
+}
+.my-info {
+  width: 60%;
+  margin: auto;
+}
+/* responsive */
+/* for phones */
+
+/* contact me*/
+#contact-me {
+  padding: 3% 10%;
+  margin: auto;
+  /* text-align: center; */
+  /* box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2); */
+
+  /* margin-bottom: 5%; */
+}
+#contact-me h2 {
+  text-align: center;
+}
+.contact-me {
+  width: 60%;
+  margin: auto;
+}
+.contactButton {
+  font-size: 1.2rem;
+  padding: 10px 50px;
+}
+.projectButton {
+  font-size: 0.7rem;
+  margin: 10px 2px 0 0;
+}
+.input,
+.area {
+  width: 100%;
+  padding: 2%;
+  border: 1px solid rgb(194, 193, 193);
+  border-radius: 10px;
+  margin-bottom: 2%;
+  color: #000000;
+}
+
+.login {
+  padding-top: 3%;
+  color: white;
+}
+.msg {
+  color: white;
+}
+
+/*footer */
+
+#footers {
+  height: 200px;
+  /* background-color: #002135; */
+}
+#footers i {
+  background: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: #198754;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+h3.footer-name {
+  color: white;
+  text-align: center;
+}
+.footer-box {
+  width: 100%;
+  position: relative;
+  top: 35%;
+}
+
+.footers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+}
+.footers-link {
+  margin: 0.7rem;
+}
+
+/* skills-section */
+#skills {
+  /* text-align: center; */
+
+  margin: auto;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  /* background-color: #002135; */
+}
+#skill {
+  text-align: center;
+}
+
+.gridSkill {
+  margin: auto;
+  margin-bottom: 3rem;
+  /* width: 70%; */
+  padding: 4% 10%;
+}
+.skills {
+  font-size: 1.3rem;
+  color: #198754;
+}
+
+.html-bar {
+  background-color: #198754;
+  width: 70%;
+
+  height: 25px;
+}
+.express-bar {
+  background-color: #198754;
+  width: 30%;
+
+  height: 25px;
+}
+.solidity-bar {
+  background-color: #198754;
+  width: 40%;
+
+  height: 25px;
+}
+.cpp-bar {
+  background-color: #198754;
+  width: 60%;
+  height: 25px;
+}
+.js-bar {
+  background-color: #198754;
+  width: 70%;
+  height: 25px;
+}
+.illustrator-bar {
+  background-color: #198754;
+  width: 50%;
+  height: 25px;
+}
+.bar p {
+  position: absolute;
+  color: #198754;
+
+  font-weight: normal;
+  font-style: italic;
+  right: 7rem;
+}
+.skill-bg {
+  background-color: #d2cfcf;
+  height: 25px;
+  position: relative;
+}
+.btn {
+  /* background-color: #007dca; */
+}
+.send-message {
+  display: grid;
+  margin: auto;
+  width: 50%;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+/* #achievements */
+#achievements {
+  width: 60%;
+  height: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+/* .img-achievement {
+  height: 50%;
+} */
+.gridAchievements {
+  padding: 2rem;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  margin: auto;
+}
+.img-container {
+  text-align: center;
+  padding-bottom: 25px;
+  margin: 0 auto;
+}
+/* For mobiles */
+@media (max-width: 480px) {
+  #projects,
+  #intro,
+  #about-me,
+  #achievements,
+  #skills,
+  #contact-me {
+    background-color: black;
+  }
+  #footers {
+    background-color: #196743;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .inputName,
+  .inputEmail,
+  .inputMessage {
+    width: 100%;
+    margin: 2px;
+  }
+  .contactButton {
+    font-size: 1rem;
+    padding: 5px 20px;
+  }
+  #achievements img {
+    width: 100px;
+    height: auto;
+  }
+  #achievements {
+    width: 80%;
+  }
+  .gridAchievements {
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    height: 250px;
+  }
+  /* footers */
+  #footers i {
+    width: 30px;
+    height: 30px;
+    font-size: small;
+  }
+  h3.footer-name {
+    font-size: large;
+  }
+  .contact-me {
+    width: 90%;
+  }
+}
+/* for phone */
+@media (max-width: 480px) {
+  .head-name {
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: x-large;
+  }
+  .navbar-toggler-icon {
+    width: 100px;
+    margin: auto;
+    text-align: center;
+  }
+  #title p {
+    text-align: center;
+    font-size: large;
+  }
+  h1,
+  .head-1 {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: x-large;
+  }
+  .head-10 {
+    font-size: x-large;
+  }
+
+  h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: larger;
+  }
+  h3 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: x-large;
+  }
+  #projects h2 {
+    font-size: 1.3rem;
+    font-weight: bolder;
+  }
+  #projects h3 {
+    font-size: 1.2rem;
+  }
+  h5 {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: large;
+  }
+  .text-block {
+    text-align: center;
+  }
+  .navbar-collapse {
+    text-align: center;
+  }
+  #cv-download {
+    margin: 1rem;
+  }
+  .education-title,
+  .experience-title {
+    padding-left: 18px;
+    /* text-align: center; */
+  }
+
+  .skill-bg {
+    height: 15px;
+  }
+  .ex-row,
+  .ed-row {
+    width: 100%;
+  }
+  .bar p {
+    font-size: 0.7rem;
+  }
+  /* making grid resp */
+  .gridContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .title-col {
+    margin-top: 10px;
+  }
+  .header-about p {
+    /* width:90%; */
+    margin: auto;
+  }
+  .image-col img {
+    height: 250px;
+    width: 250px;
+  }
+
+  /* about page */
+  .about-box {
+    display: grid;
+  }
+  .education-title,
+  .experience-title {
+    padding-left: 0;
+  }
+  /* mobile */
+  .edu-exp {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* tablet */
+
+/*  */
+/* //for laptops */
+@media (min-width: 900) {
+  #projects,
+  #intro,
+  #about-me,
+  #achievements,
+  #skills,
+  #contact-me {
+    background-color: black;
+  }
+  #footers {
+    background-color: #196743;
+  }
+  .gridContainer {
+    grid-template-columns: 450px 450px;
+  }
+  #projects {
+    background-color: black;
+  }
+
+  .login {
+    padding-top: 3%;
+  }
+  .head-10 {
+    font-size: 60px;
+  }
+  /* laptop */
+  .edu-exp {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 450px, 450px;
+  }
+  .gridItems:hover {
+    /* background-color: rgb(196, 167, 167);
+     */
+    box-shadow: 0 0 5px 1px rgba(0, 255, 89, 0.46);
+  }
+  .nav-link:hover {
+    transform: scale(1.3);
+  }
+}
+
+a {
+  color: white;
+}
+/* for tablets */
+
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) and (orientation: portrait) {
+  #projects,
+  #intro,
+  #about-me,
+  #achievements,
+  #skills,
+  #contact-me {
+    background-color: black;
+  }
+  #footers {
+    background-color: #196743;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .head-name {
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: x-large;
+  }
+  .navbar-toggler-icon {
+    width: 100px;
+    margin: auto;
+    text-align: center;
+  }
+  #title p {
+    text-align: center;
+    font-size: large;
+  }
+  h1,
+  .head-1 {
+    font-family: Montserrat;
+    font-weight: 900;
+    font-size: x-large;
+  }
+  .head-10 {
+    font-size: x-large;
+  }
+
+  h2 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: larger;
+  }
+  h3 {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: x-large;
+  }
+  #projects h2 {
+    font-size: 1.3rem;
+    font-weight: bolder;
+  }
+  #projects h3 {
+    font-size: 1.2rem;
+  }
+  h5 {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: large;
+  }
+  .text-block {
+    text-align: center;
+  }
+  .navbar-collapse {
+    text-align: center;
+  }
+  #cv-download {
+    margin: 1rem;
+  }
+  .education-title,
+  .experience-title {
+    padding-left: 18px;
+    /* text-align: center; */
+  }
+
+  .skill-bar {
+    height: 15px;
+    background-color: #198754;
+
+    height: 25px;
+  }
+  .skill-bg {
+    height: 15px;
+  }
+  .ex-row,
+  .ed-row {
+    width: 100%;
+  }
+  .bar p {
+    font-size: 0.7rem;
+  }
+  /* making grid resp */
+  .gridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .title-col {
+    margin-top: 10px;
+  }
+  .header-about p {
+    /* width:90%; */
+    margin: auto;
+  }
+  .image-col img {
+    height: 250px;
+    width: 250px;
+  }
+
+  /* about page */
+  .about-box {
+    display: grid;
+  }
+  .education-title,
+  .experience-title {
+    padding-left: 0;
+  }
+  /* mobile */
+  .edu-exp {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

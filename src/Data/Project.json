@@ -1,0 +1,50 @@
+{
+  "projects": [
+    {
+      "title": "ICTC Website",
+      "project-desc": "Built Event Management Website for ICTC of IOE.",
+      "lang": "MERN Stack",
+      "contrib": "Worked on backend and integration",
+      "source": "",
+      "demo": ""
+    },
+    {
+      "title": "Kasari Jaane, Major Project",
+      "project-desc": "A public transport mobile app which helps to navigate in Kathmandu Valley by showing all the available vehicles and routes inside valley.",
+      "lang": "Flutter and Node JS",
+      "contrib": "Working on backend",
+      "source": "",
+      "demo": ""
+    },
+    {
+      "title": "Weather App",
+      "project-desc": "Weather App shows the weather status of the current location if location permission is enabled and also for the searched locations using Open WeatherAPI. This is my solo project which I did in Reduct Bootcamp.",
+      "lang": "HTML, CSS, JS",
+      "contrib": "Worked on both front end and backend",
+      "source": "https://github.com/smrkarkii/weather/",
+      "demo": "https://smrkarkii.github.io/weather/"
+    },
+    {
+      "title": "Football League Manager",
+      "project-desc": "Football League Manager is an application which creates fixtures of the teams provided and point tables according to the result. It also creates a points table according to the result of matches. This is a group DSA project of the 4th semester.",
+      "lang": "HTML, CSS, JS",
+      "contrib": "Worked on both backend development",
+      "source": "https://github.com/smrkarkii/Football_League_Manager",
+      "demo": "https://smrkarkii.github.io/Football_League_Manager/"
+    },
+    {
+      "title": "Ask Out",
+      "project-desc": "Ask Out is a web application, designed for a particular workspace that allows users to ask queries without revealing their identity. This is a group project done in WLiT Fellowship.",
+      "lang": "HTML, CSS, React Js, Node JS",
+      "contrib": "Worked on UI design and basic backend",
+      "source": "https://github.com/smrkarkii/Ask-Out/"
+    },
+    {
+      "title": "Mystic Squares",
+      "project-desc": "Mystic Squares is a sliding puzzle game having 15 tiles. We need to place the tiles in numeric order by sliding. This is a group C++ project which we did in the 3rd semester.",
+      "lang": "HTML, CSS, JS",
+      "contrib": "Worked on algorithm implementation",
+      "source": "https://github.com/smrkarkii/Mystic-Squares"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "skills": [
+    {
+      "title": "HTML/CSS",
+      "level": "80%",
+      "qual": "Experienced"
+    },
+    {
+      "title": "C++",
+      "level": "60%",
+      "qual": "Intermediate"
+    },
+    {
+      "title": "JS",
+      "level": "60%",
+      "qual": "Intermediate"
+    },
+    {
+      "title": "Express JS",
+      "level": "60%",
+      "qual": "Intermediate"
+    },
+    {
+      "title": "Solidity",
+      "level": "40%",
+      "qual": "Begineer"
+    }
+  ]
+}
