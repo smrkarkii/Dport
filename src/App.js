@@ -6,6 +6,7 @@ import ExpData from "../src/Data/Experience.json";
 import AchData from "../src/Data/Achievement.json";
 
 import Navbar from "./components/Navbar";
+import Wallet from "./components/Wallet/Wallet";
 import Project from "./components/Projects";
 import Skills from "./components/Skills";
 import Intro from "./components/Intro";
@@ -17,6 +18,7 @@ import Achievement from "./components/Achievement";
 function App() {
   return (
     <>
+      <Wallet />
       <Navbar />
       <Intro />
       <About data={ExpData} />
