@@ -14,11 +14,16 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Achievement from "./components/Achievement";
+import { useState } from "react";
 
 function App() {
+  const [state, setState] = useState({ web3: null, contract: null });
+  function saveState(state) {
+    saveState(state);
+  }
   return (
     <>
-      <Wallet />
+      <Wallet saveState={saveState} />
       <Navbar />
       <Intro />
       <About data={ExpData} />
