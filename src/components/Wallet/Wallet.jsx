@@ -14,7 +14,7 @@ const Wallet = ({ saveState }) => {
       //contract instance
       const contract = new web3.eth.Contract(
         ABI,
-        "0xddaAd340b0f1Ef65169Ae5E41A8b10776a75482d"
+        "0xd9145CCE52D386f254917e481eB44e9943F39138"
       );
       setConnected(true);
       saveState({ web3: web3, contract: contract });

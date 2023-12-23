@@ -28,8 +28,8 @@ function App() {
       <Navbar />
       <Intro />
       <About data={ExpData} />
-      <Project data={ProjectsData} />
-      <Skills data={SkillsData} />
+      <Project state={state} />
+      <Skills data={SkillsData} state={state} />
       <Achievement data={AchData} />
       <Contact />
       <Footer />
