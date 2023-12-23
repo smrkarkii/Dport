@@ -12,7 +12,7 @@ export default function Skills(props) {
               <h3>{skill.title}</h3>
               <div
                 className="illustrator-bar bar skill-bar"
-                style={{ width: skill.level }}
+                style={{ width: skill.level, height: "20px" }}
               >
                 <p>{skill.qual}</p>
               </div>

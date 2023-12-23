@@ -4,13 +4,10 @@ import Web3 from "web3";
 import React from "react";
 import "./Wallet.css";
 
-const Wallet = (saveState) => {
+const Wallet = ({ saveState }) => {
   const [connected, setConnected] = useState(false);
 
-  function butt() {
-    console.log("btn clicked");
-  }
-  const init = async () => {
+  const initialize = async () => {
     try {
       const web3 = new Web3(window.ethereum);
       await window.ethereum.request({ method: "eth_requestAccounts" });
@@ -23,14 +20,15 @@ const Wallet = (saveState) => {
       saveState({ web3: web3, contract: contract });
       console.log(contract);
     } catch (err) {
-      console.log("Please install metamask");
+      alert("Please connect metamask");
+      // console.log("Please install metamask");
     }
   };
 
   return (
     <div className="header">
-      <button className="connectBTN" disabled={!connected} onClick={init}>
-        {connected ? "Connect Metamask" : "Connected"}
+      <button className="connectBTN" disabled={connected} onClick={initialize}>
+        {!connected ? "Connect Metamask" : "Connected"}
       </button>
     </div>
   );

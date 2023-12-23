@@ -15,22 +15,21 @@ export default function Project(props) {
 
             <p className="project-desc">{project.desc}</p>
 
-            <div>
-              <h5>Languages Used</h5>
-            </div>
+            <div>{/* <h5>Languages Used</h5> */}</div>
 
-            <span className="languages-used">{project.lang}</span>
+            <span className="languages-used" style={{ color: "white" }}>
+              Lang: {project.lang}
+            </span>
 
-            <p>
-              <b>{project.contrib}</b>
-            </p>
-            <div className="demo">
+            <p style={{ color: "" }}>{project.contrib}</p>
+            <div style={{ marginBottom: "1rem" }} className="demo">
               <a href={project.demo} target="_blank">
                 <button className="btn btn-success projectButton">
                   {" "}
                   Live Demo
                 </button>
               </a>
+
               <a href={project.source} target="_blank">
                 <button className="btn btn-success projectButton">
                   {" "}

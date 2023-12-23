@@ -37,7 +37,7 @@ export default function Contact() {
                 name="message"
                 id=""
                 cols="30"
-                rows="4"
+                rows="2"
                 placeholder=""
               ></textarea>
             </div>

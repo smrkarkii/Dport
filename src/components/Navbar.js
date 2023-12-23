@@ -2,8 +2,8 @@ const Navbar = () => {
   return (
     <nav
       id="navbar-top"
-      className="navbar navbar-expand-sm navbar-dark fixed-top "
-      style={{ color: "#0583d2" }}
+      className="navbar navbar-expand-sm navbar-dark sticky-top  "
+      style={{ color: "#0583d2", backgroundColor: "black" }}
     >
       <a href="/" className="navbar-brand head-name">
         SmritiKarki{" "}
@@ -16,7 +16,7 @@ const Navbar = () => {
         <span className="navbar-toggler-icon"> </span>
       </button>
       <div className="collapse navbar-collapse" id="navbarToggler">
-        <ul className="navbar-nav ml-auto">
+        <ul className="navbar-nav ml-auto" style={{ marginLeft: "auto" }}>
           <li className="nav-item">
             <a className="nav-link" href="#about-me">
               About Me
