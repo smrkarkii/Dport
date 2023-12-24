@@ -1,11 +1,26 @@
 import pp from "../images/smritikarki.jpg";
-export default function Intro() {
+import { useState, useEffect } from "react";
+
+export default function Intro(state) {
+  const [image, setImage] = useState("");
+
+  useEffect(() => {
+    const { contract } = state;
+    const imageId = async () => {
+      const image = contract.methods.imageLink;
+      setImage(image);
+    };
+    contract && imageId();
+  }, [state]);
   return (
     <div className="container-fluid " id="intro">
       <div className="introContainer">
         <div className="row title-row" id="second-content">
           <div className="image-col col col-md-6 col-xs-12">
-            <img src={pp} style={{}} />
+            <img
+              src={`https://gateway.pinata.cloud/ipfs/${image}`}
+              style={{}}
+            />
           </div>
           <div className="title-col col-md-6 col-xs-12">
             <div className="text-block">

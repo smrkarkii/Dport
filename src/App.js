@@ -26,8 +26,8 @@ function App() {
     <>
       <Wallet saveState={saveState} />
       <Navbar />
-      <Intro />
-      <About data={ExpData} />
+      <Intro state={state} />
+      <About data={ExpData} state={state} />
       <Project state={state} />
       <Skills data={SkillsData} state={state} />
       <Achievement data={AchData} />

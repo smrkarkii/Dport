@@ -1,9 +1,18 @@
 import React, { useState } from "react";
-
-export default function About(props) {
-  const data = props.data;
+import { useEffect } from "react";
+export default function About(state) {
   const [showAllExperiences, setShowAllExperiences] = useState(false);
+  const [desc, setDesc] = useState("");
 
+  useEffect(() => {
+    const { contract } = state;
+    const description = async () => {
+      const descriptionText = await contract.methods.description().call();
+      setDesc(descriptionText);
+      console.log("line 11", desc);
+    };
+    contract && description();
+  }, [state]);
   return (
     <section id="about-me">
       <div className="aboutMeHeader">
@@ -12,12 +21,7 @@ export default function About(props) {
         </h2>
       </div>
       <div className="header-about">
-        <p>
-          I am a 8th-semester Computer Engineering student at Pulchowk Campus. I
-          am interested in <b>Web Development.</b> I love playing Football,
-          Basketball, and Table Tennis. My other hobbies are dancing, traveling,
-          trekking, and hiking.
-        </p>
+        <p>{desc}</p>
       </div>
 
       <div className="edu-exp">
@@ -66,7 +70,7 @@ export default function About(props) {
                 <b>Experiences</b>
               </h3>
             </div>
-            <div className="ex-box-main">
+            {/* <div className="ex-box-main">
               {data.experiences
                 .map((experience, index) => (
                   <div className="ex-box" key={index}>
@@ -88,7 +92,7 @@ export default function About(props) {
                   </div>
                 ))
                 .slice(0, showAllExperiences ? data.experiences.length : 2)}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

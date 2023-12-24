@@ -1,19 +1,14 @@
 import { useEffect } from "react";
 export default function Skills({ state }) {
-  // let skillsData = props.data;
-  const { contract } = state;
-  console.log("state", contract);
+  // let skillsData = props.data
+  // console.log("state", contract);
 
   useEffect(() => {
+    const { contract } = state;
     const fetchData = async () => {
-      try {
-        const skills = await contract.methods.getSkill().call();
-        console.log("skills:", skills);
-      } catch (error) {
-        console.error("Error fetching skills:", error);
-      }
+      const skills = await contract.methods.getSkill().call();
+      console.log(skills);
     };
-
     contract && fetchData();
   }, [state]);
   return (
